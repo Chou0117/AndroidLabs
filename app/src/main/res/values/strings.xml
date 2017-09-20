@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lab 1</string>
+    <string name="helloMessage">Hello World!</string>
+    <string name="buttonMessage">This is a button!</string>
+</resources>

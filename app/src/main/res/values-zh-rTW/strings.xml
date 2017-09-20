@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">實驗一</string>
+    <string name="helloMessage">嗨~世界~</string>
+    <string name="buttonMessage">這是個按鈕</string>
+</resources>
