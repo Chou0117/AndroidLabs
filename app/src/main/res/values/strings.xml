@@ -1,5 +1,13 @@
 <resources>
-    <string name="app_name">Lab 1</string>
+    <string name="app_name">Lab 2</string>
     <string name="helloMessage">Hello World!</string>
     <string name="buttonMessage">This is a button!</string>
+    <string name="loginLabel">Login</string>
+    <string name="loginNameInput">Login Name</string>
+    <string name="passwordLabel">Password</string>
+    <string name="radioButton">Radio Button</string>
+    <string name="checkBox">Check Box</string>
+    <string name="switchMessage">What does this do?</string>
+    <string name="description">Image 1</string>
+
 </resources>
