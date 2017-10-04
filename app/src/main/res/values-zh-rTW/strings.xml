@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">實驗二</string>
+    <string name="app_name">實驗三</string>
     <string name="helloMessage">嗨~世界~</string>
     <string name="buttonMessage">這是個按鈕</string>
-    <string name="loginLabel">登入</string>
+    <string name="loginLabel">登入名稱</string>
     <string name="passwordLabel">密碼</string>
+    <string name="loginButtonMessage">登入</string>
     <string name="radioButton">單選按鈕</string>
     <string name="checkBox">勾選框框</string>
     <string name="switchMessage">這個是做什麼用的?</string>
+    <string name="dialog_message">你想結束這個頁面嗎?</string>
+    <string name="dialog_title">離開</string>
+    <string name="ok">好</string>
+    <string name="cancel">取消</string>
 </resources>

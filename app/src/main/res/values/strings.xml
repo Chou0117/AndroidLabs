@@ -1,13 +1,18 @@
 <resources>
-    <string name="app_name">Lab 2</string>
+    <string name="app_name">Lab 3</string>
     <string name="helloMessage">Hello World!</string>
     <string name="buttonMessage">This is a button!</string>
     <string name="loginLabel">Login</string>
     <string name="loginNameInput">Login Name</string>
     <string name="passwordLabel">Password</string>
+    <string name="loginButtonMessage">Login</string>
     <string name="radioButton">Radio Button</string>
     <string name="checkBox">Check Box</string>
     <string name="switchMessage">What does this do?</string>
     <string name="description">Image 1</string>
+    <string name="dialog_message">Do you want to finish the activity?</string>
+    <string name="dialog_title">Exit</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
 
 </resources>
