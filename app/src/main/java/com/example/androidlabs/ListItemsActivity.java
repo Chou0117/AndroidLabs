@@ -46,11 +46,11 @@ public class ListItemsActivity extends AppCompatActivity {
                 Toast toast;
 
                 if (isChecked) {
-                    CharSequence text = "Switch is On";
+                    CharSequence text = getString(R.string.radioOnMessage);
                     toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT); //this is the ListActivity
                     toast.show(); //display your message box
                 } else {
-                    CharSequence text = "Switch is Off";
+                    CharSequence text = getString(R.string.radioOffMessage);
                     toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG); //this is the ListActivity
                     toast.show(); //display your message box
                 }

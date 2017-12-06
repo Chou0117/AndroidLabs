@@ -8,8 +8,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class LoginActivity extends Activity {
+
+    EditText loginText;
+    SharedPreferences defaultEmail;
 
     protected static final String ACTIVITY_NAME = "LoginActivity";
 
@@ -19,31 +23,26 @@ public class LoginActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        SharedPreferences defaultEmail = getSharedPreferences("Default Email",MODE_PRIVATE);
-        SharedPreferences.Editor editor = defaultEmail.edit();
-        defaultEmail.getString("Default Email", "email@domain.com");
-        editor.commit();
+        loginText =  findViewById(R.id.loginText);
+
+        defaultEmail = getSharedPreferences("Default Email", LoginActivity.MODE_PRIVATE);
+
+        String name = defaultEmail.getString("Login", "example@email.com");
+
+        loginText.setText(name);
 
         final Button lButton = findViewById(R.id.loginButton);
         lButton.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                SharedPreferences.Editor editor = defaultEmail.edit();
+                editor.putString("Login", loginText.getText().toString());
+                editor.commit();
                 Intent intent = new Intent(LoginActivity.this, StartActivity.class);
                 startActivity(intent);
             }
         });
-//
-//        SharedPreferences sharedPref = new SharedPreferences() {
-//            SharedPreferences.Editor editor = sharedPref.edit();
-//           sharedPreferences.getString(“DefaultEmail”, “email@domain.com”);
-//            editor.commit();
-//        };
-//        EditText edt = findViewById(R.id.loginText);
-//        String xyz = edt.getText().toString();
-//        SharedPreferences loginID = getSharedPreferences("Login ID",MODE_PRIVATE);
-//        loginID.edit().putInt(xyz,1);
-//        edt.setHint(loginID.getInt("",1));
-//
+
     }
 
     @Override
