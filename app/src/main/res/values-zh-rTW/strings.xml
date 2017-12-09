@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">實驗四</string>
+    <string name="app_name">安卓實驗</string>
     <string name="helloMessage">嗨~世界~</string>
-    <string name="buttonMessage">這是個按鈕</string>
+    <string name="buttonMessage">多功能列表</string>
     <string name="chatButtonMessage">開始聊天</string>
     <string name="loginLabel">登入名稱</string>
+    <string name="loginNameInput">登入資訊</string>
     <string name="passwordLabel">密碼</string>
     <string name="loginButtonMessage">登入</string>
     <string name="radioButton">單選按鈕</string>
@@ -21,4 +22,5 @@
     <string name="ok">好</string>
     <string name="cancel">取消</string>
     <string name="chatSendButton">傳送</string>
+    <string name="weatherButtonMessage">天氣預報</string>string>
 </resources>
