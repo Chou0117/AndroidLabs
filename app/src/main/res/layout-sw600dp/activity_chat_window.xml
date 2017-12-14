@@ -6,14 +6,19 @@
     android:layout_height="match_parent"
     tools:context="com.example.androidlabs.ChatWindow">
 
+    <FrameLayout
+        android:id="@+id/tabletFrame"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/chatWindow"/>
+
     <ListView
         android:id="@+id/chatWindow"
-        android:layout_width="wrap_content"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_above="@id/chatSendButton"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true" />
+
 
     <EditText
         android:id="@+id/chatEditText"
@@ -28,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:text="@string/chatSendButton" />
+        android:text="@string/chatSendButton"
+        android:layout_toLeftOf="@id/tabletFrame"/>
 
 </RelativeLayout>

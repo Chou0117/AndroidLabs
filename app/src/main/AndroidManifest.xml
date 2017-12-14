@@ -5,6 +5,9 @@
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
+
+    <supports-screens android:requiresSmallestWidthDp="600" />
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -24,8 +27,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".ChatWindow" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".WeatherForecast"></activity>
+        <activity android:name=".WeatherForecast" />
+        <activity android:name=".MessageDetails" />
+        <activity android:name=".EmptyFragment"></activity>
     </application>
 
 </manifest>
